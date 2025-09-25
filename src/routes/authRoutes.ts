@@ -3,7 +3,7 @@ import AuthController from "../controllers/AuthController.js";
 
 const router = express.Router();
 
-router.post("/activate", AuthController.activate);
+router.post("/phone", AuthController.activate);
 
 
 export default router;

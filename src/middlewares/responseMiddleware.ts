@@ -1,10 +1,6 @@
 import type { NextFunction, Request, Response } from "express";
 
-export default function responseMiddleware(
-  req: Request,
-  res: Response,
-  next: NextFunction
-) {
+export default function responseMiddleware(req: Request, res: Response, next: NextFunction) {
   res.success = (message = "", body = null, code = 200) => {
     res.status(code).json({
       success: true,
