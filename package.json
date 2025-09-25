@@ -7,7 +7,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "nodemon --exec \"tsx ./src/app\" -e ts,js,json",
+    "start": "node ./dist/app.js"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.9",
