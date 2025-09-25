@@ -14,6 +14,13 @@ declare global{
 
         }
       }
+
+      namespace Express{
+        interface Response {
+          success(message?: string, body?: any, code?: number);
+          fail(message?: string, code?: number, body?: any);
+        }
+      }
 }
 
 export{}
